@@ -8,6 +8,7 @@
 #  medications :string
 #  name        :string
 #  sickness    :string
+#  slug        :string
 #  created_at  :datetime         not null
 #  updated_at  :datetime         not null
 #  chip_id     :string
@@ -15,6 +16,7 @@
 #
 # Indexes
 #
+#  index_pets_on_slug     (slug) UNIQUE
 #  index_pets_on_user_id  (user_id)
 #
 # Foreign Keys
