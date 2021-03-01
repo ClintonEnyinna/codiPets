@@ -14,4 +14,6 @@
 #
 class User < ApplicationRecord
   has_many :pets
+
+  validates :first_name, :address, :phone, presence: :true
 end
